@@ -1,0 +1,25 @@
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.trigger:hover {
+    color: #1890ff;
+}
+
+.logo {
+    background: rebeccapurple;
+    color: aliceblue;
+    text-align: center;
+    margin: 0px;
+    padding: 16px;
+}
+.logo>a{
+    color: white;
+}
+.logo>a:hover{
+    color: white;
+}
