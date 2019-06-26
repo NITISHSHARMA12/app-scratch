@@ -15,8 +15,8 @@ class Index extends React.Component{
                 minHeight: 280,
                 }}
             >
-                <h1>Index Page</h1>
-                <p>DashBoard</p>
+                <h1>Form Page</h1>
+                <p>Form</p>
           </Content>
         </div>
     }
