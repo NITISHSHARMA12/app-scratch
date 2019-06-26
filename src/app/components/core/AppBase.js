@@ -4,7 +4,6 @@ import {Layout} from "antd";
 import {Route, Switch} from "react-router-dom";
 import AppHeader from "./AppHeader";
 import AppSider from './AppSider';
-import AppContent from './AppContent';
 import AppFooter from './AppFooter';
 import Index from '../dashboard/Index';
 
