@@ -9,11 +9,15 @@ class AppSider extends React.Component{
 
   
       render() {
-        console.log("props",this.props);
-        return ( <Sider trigger={null} collapsible collapsed={this.props.collapsed}>
+        console.log("props sider",this.props);
+        return ( <Sider trigger={null} collapsible collapsed={this.props.collapsed} style={{transition:'1.4s'}}>
           <div className="logo" >
             <Link to="/">
+              {this.props.collapsed ?<span>ETU</span>
+              :
               <span>Easy To Use</span>
+              }
+              
             </Link>
           </div>
           <Divider style={{marginTop:0 ,borderStyle:hidden}} dashed={true}/>
@@ -21,7 +25,10 @@ class AppSider extends React.Component{
             <Menu.Item key="1">
                 <Link to="/dashboard">
                   <Icon type="dashboard" />
-                  <span className="nav-text">Dashboard</span>
+                  {this.props.collapsed ? <span className="nav-text">Dash</span>
+                  :<span className="nav-text">Dashboard</span>
+                  }
+                  
                 </Link>
               
             </Menu.Item>

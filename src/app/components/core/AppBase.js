@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {Layout} from "antd";
-import {Route, Switch} from "react-router-dom";
+import {Route, Switch , Redirect} from "react-router";
 import AppHeader from "./AppHeader";
 import AppSider from './AppSider';
 import AppFooter from './AppFooter';
@@ -32,8 +32,9 @@ class AppBase extends React.Component{
                     <Route exact path="/dashboard" render={(route) => <DASHBOARD/>}/>
                     <Route exact path="/forms" render={(route) => <FORM/>}/>
                     <Route exact path="/layouts" render={(route) => <LAYOUT/>}/>
-                    <Route exact path="/slider" render={(route) =><SLIDER/>}/>
+                    <Route exact path="/slider" render={(route) => <SLIDER/>}/>
                     <Route exact path="/how-to-use" render={(route) => <HTU/>}/>
+                    <Route render={() =>(<Redirect to="/dashboard" />)}/>{ /*Redirect url if not match url */}
                 </Switch>
                 <AppFooter/>
            
